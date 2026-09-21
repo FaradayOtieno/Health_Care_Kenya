@@ -1,37 +1,103 @@
 # Geospatial Clustering of Health Facilities in Kenya Based on Location and Ownership Type
 
-This project uses unsupervised machine learning to analyze health facilities in Kenya based on their **ownership** and ** regional patterns in healthcare facility distribution**. 
-The goal is to uncover patterns that can inform health planning, investment, or policy.
+This project applies **unsupervised machine learning** to explore patterns in healthcare facility distribution and ownership across Kenya.
 
-## 🗂️ Dataset
-- Health Facility Master List (Kenya)
-- Includes variables like:
-  - Ownership (public, private, NGO, religious)
-  - Facility type and services
-  - Region (optional)
+The analysis uses **KMeans clustering and Principal Component Analysis (PCA)** to identify groups of health facilities with similar characteristics and examine how ownership and facility attributes vary across the resulting clusters.
 
-## 🧠 Techniques Used
-- Label Encoding for categorical fields
-- KMeans clustering (4 clusters)
-- PCA for dimensionality reduction and visualization
-- Heatmaps and group-wise summaries for interpretation
+## Research Focus
 
-## 📊 Key Insights
-- Cluster 0: Predominantly government-owned facilities
-- Cluster 1: Dominated by private practice (clinics, specialists)
-- Cluster 2: Mixed community/NGO ownership
-- Cluster 3: Specialized private practices
+The project explores the following questions:
 
-## 🖼️ Visuals
-- Ownership distribution by cluster
-- PCA scatter plot of clusters
-- Heatmaps showing ownership dominance
+* What patterns exist in the distribution and ownership of health facilities?
+* How do facility characteristics differ across identified clusters?
+* Can dimensionality reduction help visualize the structure of the facility data?
 
-## 🛠️ Tools
-- Python (pandas, scikit-learn, matplotlib, seaborn)
+## Dataset
 
-## 📌 Conclusion
-This project highlights how clustering can expose hidden structure in healthcare infrastructure. The results may guide resource allocation, policy targeting, or further analysis in health systems research.
+The analysis uses data from the **Health Facility Master List (Kenya)**.
 
-## 📄 License
+Relevant variables include characteristics such as:
+
+* Ownership type
+* Facility type
+* Services
+* Regional or location information, where available
+
+## Methodology
+
+The analysis follows an unsupervised learning workflow:
+
+1. Data preparation and selection of relevant variables
+2. Encoding of categorical variables
+3. KMeans clustering
+4. Principal Component Analysis (PCA)
+5. Cluster visualization
+6. Group-wise summaries and interpretation
+
+### Techniques Used
+
+* Label encoding for categorical variables
+* KMeans clustering
+* PCA for dimensionality reduction
+* Heatmaps
+* Group-wise summaries
+* Cluster interpretation
+
+## Cluster Analysis
+
+The analysis identified **four clusters** based on the selected facility characteristics.
+
+The resulting clusters showed differences in ownership and facility characteristics, including patterns involving:
+
+* Government-owned facilities
+* Private facilities and practices
+* Community and NGO-related facilities
+* Specialized private facilities
+
+Cluster labels represent groups identified by the algorithm and should be interpreted in the context of the variables included in the analysis.
+
+## Visualizations
+
+The project includes visual analysis of:
+
+* Ownership distribution by cluster
+* PCA representation of the clusters
+* Heatmaps showing patterns across groups
+* Group-wise comparisons of facility characteristics
+
+## Repository Structure
+
+```text id="9v4v5f"
+Health_Care_Kenya/
+│
+├── data/        # Dataset files
+├── results/     # Analytical results and outputs
+├── scripts/     # Analysis scripts
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+## Technologies
+
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib
+* Seaborn
+
+## Purpose
+
+This project demonstrates the application of **unsupervised learning and statistical data analysis to healthcare infrastructure data**.
+
+It forms part of my broader interest in applying data science, machine learning, and quantitative methods to real-world health and development questions.
+
+## License
+
 MIT License
+
+## Author
+
+**Michael Faraday Otieno**
+
+Statistician | Data Science | Machine Learning | AI | Independent Researcher
